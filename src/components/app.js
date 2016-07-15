@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import QuestionAnswers from './question_answers'
+import Question from './question'
+import Answers from './answers'
 import Score from './score'
 import SubmitAnswer from './submit_answer'
 
 export default class App extends Component {
 
   render() {
+
     return (
+
       <div className="container well">
 
         <div className="row">
@@ -17,14 +20,20 @@ export default class App extends Component {
 
         </div>
 
-        <QuestionAnswers />
+        <div className="row">
 
-        <SubmitAnswer />
+          <Question />
+
+          <Answers />
+
+        </div>
 
         <Score />
 
       </div>
+      
     );
+
   }
 
 }

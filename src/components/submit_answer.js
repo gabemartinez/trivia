@@ -2,26 +2,15 @@ import React, {Component} from 'react'
 
 class SubmitAnswer extends Component {
 
-  onClickSubmitAnswer(event) {
-    console.log(event)
-  }
-
-  constructor(props) {
-    super(props)
-    this.state = {term: ''}
-  }
-
   render() {
 
     return (
 
-      <div className="row">
+        <div className="col-md-8">
 
-        <div className="col-md-8 col-md-offset-4">
-          <button onClick={this.onClickSubmitAnswer} type="button" className="btn btn-danger">Submit Answer</button>
+          <button type="button" className="btn btn-danger">Submit Answer</button>
+
         </div>
-
-      </div>
 
     )
 
