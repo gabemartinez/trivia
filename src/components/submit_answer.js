@@ -6,6 +6,11 @@ class SubmitAnswer extends Component {
     console.log(event)
   }
 
+  constructor(props) {
+    super(props)
+    this.state = {term: ''}
+  }
+
   render() {
 
     return (

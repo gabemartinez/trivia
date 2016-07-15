@@ -9,6 +9,14 @@ export default class App extends Component {
     return (
       <div className="container well">
 
+        <div className="row">
+
+          <div className="col-md-12">
+            <h2>Trivia Title</h2>
+          </div>
+
+        </div>
+
         <QuestionAnswers />
 
         <SubmitAnswer />
