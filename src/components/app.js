@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Question from './question'
 import Answers from './answers'
 import Score from './score'
-import SubmitAnswer from './submit_answer'
 
 export default class App extends Component {
 
@@ -31,7 +30,7 @@ export default class App extends Component {
         <Score />
 
       </div>
-      
+
     );
 
   }

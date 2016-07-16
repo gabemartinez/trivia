@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Answer from './answer'
-import SubmitAnswer from './submit_answer'
+import SubmitAnswer from '../containers/submit_answer'
 
 class Answers extends Component {
 
