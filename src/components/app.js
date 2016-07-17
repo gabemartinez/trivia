@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Question from './question'
+import Title from '../containers/title'
+import Question from '../containers/question'
 import Answers from './answers'
 import Score from './score'
 
@@ -11,13 +12,7 @@ export default class App extends Component {
 
       <div className="container well">
 
-        <div className="row">
-
-          <div className="col-md-12">
-            <h2>Trivia Title</h2>
-          </div>
-
-        </div>
+        <Title />
 
         <div className="row">
 

@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
+import TitleReducer from './reducer-title'
 import QuestionReducer from './reducer-questions'
 
 const rootReducer = combineReducers({
-  //state: (state = {}) => state
+  title: TitleReducer,
   questions: QuestionReducer
 });
 

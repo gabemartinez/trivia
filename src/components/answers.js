@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Answer from './answer'
+import Answer from '../containers/answer'
 import SubmitAnswer from '../containers/submit_answer'
 
 class Answers extends Component {
