@@ -10,9 +10,9 @@ class Question extends Component {
 
         <div className="col-md-4">
 
-          <h3>Question (1/{this.props.questions.length})</h3>
+          <h3>Question ({this.props.activeQuestion+1}/{this.props.questions.length})</h3>
 
-          <p>{this.props.questions[0].question}</p>
+          <p>{this.props.questions[this.props.activeQuestion].question}</p>
 
         </div>
 
@@ -24,7 +24,8 @@ class Question extends Component {
 
 function mapStateToProps(state) {
   return {
-    questions: state.questions
+    questions: state.questions,
+    activeQuestion: state.activeQuestion
   }
 }
 

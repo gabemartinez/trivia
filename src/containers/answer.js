@@ -6,7 +6,7 @@ class Answer extends Component {
 
   answersRadios() {
     return (
-      this.props.questions[0].answers.map((answer) => {
+      this.props.questions[this.props.activeQuestion].answers.map((answer) => {
         return (
 
           <div key={answer.id} className="radio">
@@ -39,7 +39,8 @@ class Answer extends Component {
 
 function mapStateToProps(state) {
   return {
-    questions: state.questions
+    questions: state.questions,
+    activeQuestion: state.activeQuestion
   }
 }
 

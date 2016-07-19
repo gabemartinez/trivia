@@ -1,3 +1,7 @@
 .no-left-padding {
   padding-left: 0 !important;
 }
+
+.submit-button-style {
+  margin-right: 10px;
+}
