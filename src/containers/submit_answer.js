@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {nextQuestion} from '../actions'
+import {submitAnswer, nextQuestion} from '../actions'
 import {bindActionCreators} from 'redux'
 
 class SubmitAnswer extends Component {
@@ -11,7 +11,7 @@ class SubmitAnswer extends Component {
 
         <div className="col-md-8 no-left-padding">
 
-          <button onClick={this.submittedAnswer} type="button" className="btn btn-info submit-button-style">
+          <button onClick={this.props.submitAnswer} type="button" className="btn btn-info submit-button-style">
             Submit Answer
           </button>
 
@@ -34,7 +34,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({nextQuestion: nextQuestion}, dispatch)
+  return bindActionCreators({nextQuestion: nextQuestion, submitAnswer: submitAnswer}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SubmitAnswer)
