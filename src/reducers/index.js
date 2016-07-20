@@ -1,14 +1,12 @@
 import { combineReducers } from 'redux'
-import TitleReducer from './reducer-title'
-import QuestionReducer from './reducer-questions'
+import QuizQuestions from './quizquestions'
 import ActiveQuestion from './reducer-active-question'
 import SubmitAnswer from './reducer-submit-answer'
 
 const rootReducer = combineReducers({
-  title: TitleReducer,
-  questions: QuestionReducer,
+  quizquestions: QuizQuestions,
   activeQuestion: ActiveQuestion,
   submitAnswer: SubmitAnswer,
-});
+})
 
 export default rootReducer;

@@ -11,7 +11,7 @@ class SubmitAnswer extends Component {
 
         <div className="col-md-8 no-left-padding">
 
-          <button onClick={this.props.submitAnswer} type="button" className="btn btn-info submit-button-style">
+          <button onClick={() => this.props.submitAnswer(state)} type="button" className="btn btn-info submit-button-style">
             Submit Answer
           </button>
 

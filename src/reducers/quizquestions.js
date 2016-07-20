@@ -1,7 +1,5 @@
 export default function() {
-
   return [
-
       {
         id: 1,
         question: 'How many Sun Devils have received the Jack Nicklaus National Player of the Year Award?',
@@ -47,7 +45,5 @@ export default function() {
         ],
         correctanswerid: 5
       },
-
     ]
-
 }

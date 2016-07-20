@@ -1,24 +1,15 @@
-//submit and check answer
-export function submitAnswer(submittedanswer) {
-
+export const submitAnswer = (state) => {
+  console.log('you clicked on submit button: ', state)
   return {
-
-    type: 'SUBMIT_ANSWER',
-    submittedanswer: 2
-
+    type: 'SUBMIT_ANSWER_CLICKED',
+    payload: state
   }
-
 }
 
-//go to next question
+//--
+
 export function nextQuestion() {
-
-  //console.log('next question mofo')
-  //nextQuestion is an action creator that will return an object that is the actual action
   return {
-
     type: 'NEXT_QUESTION'
-
   }
-
 }
