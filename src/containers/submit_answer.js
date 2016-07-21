@@ -7,7 +7,7 @@ class SubmitAnswer extends Component {
   render() {
     return (
         <div className="col-md-8 no-left-padding">
-          <button onClick={this.props.nextQuestion} type="button" className="btn btn-success">
+          <button onClick={this.props.nextQuestion} type="button" className="btn btn-danger" disabled={this.props.questionAnswer.nextButtonDisabled}>
             Next Question <span className="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
           </button>
         </div>
@@ -17,15 +17,15 @@ class SubmitAnswer extends Component {
 
 function mapStateToProps(state) {
   return {
-    quizquestions: state.quizquestions,
-    activeQuestion: state.activeQuestion
+    quizQuestions: state.quizQuestions,
+    questionAnswer: state.questionAnswer
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({
-    nextQuestion: nextQuestion},
-    dispatch)
+    nextQuestion: nextQuestion
+  }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SubmitAnswer)

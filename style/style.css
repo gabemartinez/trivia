@@ -5,3 +5,13 @@
 .submit-button-style {
   margin-right: 10px;
 }
+
+.btn-danger, .btn-danger:hover, .btn-danger:focus, .btn-danger.focus,
+  .btn-danger:active, .btn-danger.active, .btn-danger:visited,
+  .btn-danger:active:hover, .btn-danger.active:hover{
+      background-color: #8C1D40 !important;
+      border-color: #8C1D40 !important;
+      color:#fff;
+      border: none;
+      outline: none;
+  }

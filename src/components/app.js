@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Question from '../containers/question'
 import Answers from './answers'
-import Score from './score'
+import Score from '../containers/score'
 
 export default class App extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class App extends Component {
       <div className="container well">
         <div className="row">
           <div className="col-md-12">
-            <h2>QUIZ TITLE GOES HERE</h2>
+            <h2>Test Your Knowledge</h2>
           </div>
         </div>
         <div className="row">

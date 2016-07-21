@@ -6,8 +6,8 @@ class Question extends Component {
   render() {
     return (
         <div className="col-md-4">
-          <h3>Question ({this.props.activeQuestion+1}/{this.props.quizquestions.length})</h3>
-          <p>{this.props.quizquestions[this.props.activeQuestion].question}</p>
+          <h3>Question ({this.props.questionAnswer.activeQuestionId+1}/{this.props.quizQuestions.length})</h3>
+          <p>{this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].question}</p>
         </div>
     )
   }
@@ -15,8 +15,8 @@ class Question extends Component {
 
 function mapStateToProps(state) {
   return {
-    quizquestions: state.quizquestions,
-    activeQuestion: state.activeQuestion
+    quizQuestions: state.quizQuestions,
+    questionAnswer: state.questionAnswer
   }
 }
 

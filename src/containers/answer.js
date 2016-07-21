@@ -6,9 +6,10 @@ import {selectAnswer} from '../actions'
 class Answer extends Component {
 
   answersList() {
-    return ( this.props.quizquestions[this.props.activeQuestion].answers.map((answer) => {
+    let correctanswer = this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].correctanswerid
+    return ( this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].answers.map((answer) => {
         return (
-          <li key={answer.id} className="list-group-item" onClick={() => this.props.selectAnswer(answer)}>
+          <li key={answer.id} className="list-group-item" onClick={() => this.props.selectAnswer(answer, correctanswer)}>
            {answer.answer}
           </li>
         )
@@ -30,15 +31,15 @@ class Answer extends Component {
 
 function mapStateToProps(state) {
   return {
-    quizquestions: state.quizquestions,
-    activeQuestion: state.activeQuestion
+    quizQuestions: state.quizQuestions,
+    questionAnswer: state.questionAnswer
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({
-    selectAnswer: selectAnswer},
-    dispatch)
+    selectAnswer: selectAnswer
+  }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Answer)
