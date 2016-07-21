@@ -1,20 +1,16 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
+import {selectAnswer} from '../actions'
 
 class Answer extends Component {
 
-  answersRadios() {
-    let answergroupname = "answergroup_"+this.props.activeQuestion
-    return (
-      this.props.quizquestions[this.props.activeQuestion].answers.map((answer) => {
+  answersList() {
+    return ( this.props.quizquestions[this.props.activeQuestion].answers.map((answer) => {
         return (
-          <div key={answer.id} className="radio">
-             <label>
-               <input type="radio" name={answergroupname} id={answergroupname} value={answer.answer} />
-               {answer.answer}
-             </label>
-           </div>
+          <li key={answer.id} className="list-group-item" onClick={() => this.props.selectAnswer(answer)}>
+           {answer.answer}
+          </li>
         )
       })
     )
@@ -22,8 +18,10 @@ class Answer extends Component {
 
   render() {
     return (
-      <div className="col-md-8">
-        {this.answersRadios()}
+      <div>
+        <ul className="list-group">
+          {this.answersList()}
+        </ul>
       </div>
     )
   }
@@ -37,4 +35,10 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Answer)
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    selectAnswer: selectAnswer},
+    dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Answer)
