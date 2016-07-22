@@ -2,6 +2,10 @@
   padding-left: 0 !important;
 }
 
+.button-left-padding {
+  margin-left: 10px !important;
+}
+
 .submit-button-style {
   margin-right: 10px;
 }

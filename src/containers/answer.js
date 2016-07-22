@@ -7,9 +7,10 @@ class Answer extends Component {
 
   answersList() {
     let correctanswer = this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].correctanswerid
+    let totalquizquestions = this.props.quizQuestions.length
     return ( this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].answers.map((answer) => {
         return (
-          <li key={answer.id} className="list-group-item" onClick={this.props.questionAnswer.nextButtonColor != 'success' ? () => this.props.selectAnswer(answer, correctanswer) : null}>
+          <li key={answer.id} className="list-group-item" onClick={this.props.questionAnswer.nextButtonColor != 'success' ? () => this.props.selectAnswer(answer, correctanswer, totalquizquestions) : null}>
            {answer.answer}
           </li>
         )
