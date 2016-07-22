@@ -24,3 +24,7 @@ Clone this repo, install dependencies, then start the dev server with the follow
 ###Screenshot###
 
 ![Initial Screenshot of Widget](http://i.imgur.com/02yhL27.png)
+
+###Test on CodePen###
+
+[Click Here](http://codepen.io/gabemartinez/full/YWLPQv/)
