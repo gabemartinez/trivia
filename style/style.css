@@ -11,7 +11,4 @@
   .btn-danger:active:hover, .btn-danger.active:hover{
       background-color: #8C1D40 !important;
       border-color: #8C1D40 !important;
-      color:#fff;
-      border: none;
-      outline: none;
   }
