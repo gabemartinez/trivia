@@ -1,5 +1,6 @@
 /node_modules
 bundle.js
+uglybundle.js
 npm-debug.log
 
 # IntelliJ
