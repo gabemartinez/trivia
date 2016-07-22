@@ -16,3 +16,17 @@
       background-color: #8C1D40 !important;
       border-color: #8C1D40 !important;
   }
+
+.try-again-container {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.question-text {
+  font-size: 20px;
+  color: #8C1D40;
+  font-weight: bold;
+}

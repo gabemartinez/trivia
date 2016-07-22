@@ -11,13 +11,20 @@ class Buttons extends Component {
     if (thisquestionid === totalquizquestions-1) {
 
       return (
-        <div className="col-md-8 no-left-padding">
-          <button type="button" className="btn btn-danger" disabled={true}>
-            Next Question <span className="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
-          </button>
-          <button onClick={() => this.props.tryAgain()} type="button" className="btn btn-warning button-left-padding" disabled={false}>
-            Try Again? <span className="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-          </button>
+        <div>
+
+          <div className="col-md-8 no-left-padding">
+            <button type="button" className="btn btn-danger" disabled={true}>
+              Next Question <span className="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div className="col-md-8 no-left-padding try-again-container">
+            <button onClick={() => this.props.tryAgain()} type="button" className="btn btn-warning" disabled={false}>
+              Try Again? <span className="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+            </button>
+          </div>
+
         </div>
       )
 
