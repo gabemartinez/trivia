@@ -2,17 +2,15 @@
 
 Trivia - A React/Redux App is a widget that ASU will be using for news articles in order to interact with readers.
 
-The widget takes in an object of questions and their answers, then displays them one by one for a user to test their knowledge with.
+The widget takes in an object of questions and their answers, then displays them one by one for a user to test their knowledge. Most answers will be found in the article that the widget is embedded into.
 
-Score is being kept. More options will be added soon.
+Score is being kept. UX adjustments and animations have been added in, thanks to [animate.css](https://daneden.github.io/animate.css/).
 
-###Getting Started###
-
-There are two methods for getting started with this repo.
+More options will be added soon.
 
 ####Setup with npm#####
 
-Clone this repo, install dependencies, then start the dev server with the following:
+Clone the repo, install dependencies, then start the dev server with the following:
 
 ```
 	> git clone https://github.com/gabemartinez/trivia.git
@@ -23,8 +21,8 @@ Clone this repo, install dependencies, then start the dev server with the follow
 
 ###Screenshot###
 
-![Initial Screenshot of Widget](http://i.imgur.com/XGWv1Na.png)
+![Screenshot of Widget](http://i.imgur.com/XGWv1Na.png)
 
-###Test on CodePen###
+###Test the widget on CodePen###
 
-[Click Here](http://codepen.io/gabemartinez/full/YWLPQv/)
+[http://codepen.io/gabemartinez/full/YWLPQv/](http://codepen.io/gabemartinez/full/YWLPQv/)
