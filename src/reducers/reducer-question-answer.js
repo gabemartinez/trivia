@@ -1,9 +1,12 @@
 const initialState = {
   nextButtonDisabled: true,
+  nextButtonHidden: true,
   activeQuestionId: 0,
   correctAnswers: 0,
   totalQuizQuestions: 0,
-  nextButtonColor: 'danger'
+  nextButtonColor: 'danger',
+  fireQuestionAnimation: 'animated bounceIn',
+  fireScoreAnimation: null
 }
 
 export default function(state = initialState, action) {
@@ -22,16 +25,22 @@ export default function(state = initialState, action) {
         return {...state,
           correctAnswers: state.correctAnswers+=1,
           nextButtonDisabled: false,
+          nextButtonHidden: false,          
           nextButtonColor: 'success',
-          totalQuizQuestions: totalQuizQuestions
+          totalQuizQuestions: totalQuizQuestions,
+          fireQuestionAnimation: null,
+          fireScoreAnimation: 'animated flash'
         }
       }
 
       //if answer is not correct do not increment
         return {...state,
           nextButtonDisabled: false,
+          nextButtonHidden: false,
           nextButtonColor: 'success',
-          totalQuizQuestions: totalQuizQuestions
+          totalQuizQuestions: totalQuizQuestions,
+          fireQuestionAnimation: null,
+          fireScoreAnimation: 'animated shake'
         }
     //ANSWER_SELECTED CASE
 
@@ -40,20 +49,26 @@ export default function(state = initialState, action) {
         return {...state,
           activeQuestionId: state.activeQuestionId+=1,
           nextButtonDisabled: true,
-          nextButtonColor: 'danger'
+          nextButtonHidden: true,
+          nextButtonColor: 'danger',
+          fireQuestionAnimation: 'animated bounceIn',
+          fireScoreAnimation: null
         }
     //NEXT_QUESTION_BUTTON_CLICKED CASE
 
-    //TRY_AGAIN_BUTTON_CLICKED CASE
+    //TRY_AGAIN_BUTTON_CLICKED CASE RETURN TO INITIAL STATE
     case 'TRY_AGAIN_BUTTON_CLICKED':
         return {
             nextButtonDisabled: true,
+            nextButtonHidden: true,
             activeQuestionId: 0,
             correctAnswers: 0,
             totalQuizQuestions: 0,
-            nextButtonColor: 'danger'
+            nextButtonColor: 'danger',
+            fireQuestionAnimation: 'animated bounceIn',
+            fireScoreAnimation: null
         }
-    //TRY_AGAIN_BUTTON_CLICKED CASE
+    //TRY_AGAIN_BUTTON_CLICKED CASE RETURN TO INITIAL STATE
 
     default:
       return state

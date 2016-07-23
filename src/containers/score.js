@@ -8,8 +8,10 @@ class Score extends Component {
       <div className="row">
         <div className="col-md-8 col-md-offset-4">
           <hr />
-          <h4>Score</h4>
-          <p>{this.props.questionAnswer.totalQuizQuestions>0 ? Math.floor((this.props.questionAnswer.correctAnswers/this.props.questionAnswer.totalQuizQuestions)* 100) : 0}%</p>
+          <h3>Score</h3>
+          <p className={`question-text ${this.props.questionAnswer.fireScoreAnimation}`}>
+            {this.props.questionAnswer.totalQuizQuestions>0 ? Math.floor((this.props.questionAnswer.correctAnswers/this.props.questionAnswer.totalQuizQuestions)* 100) : 0}%
+          </p>
         </div>
       </div>
     )
