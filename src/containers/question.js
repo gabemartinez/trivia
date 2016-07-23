@@ -7,7 +7,7 @@ class Question extends Component {
     return (
         <div className="col-md-4">
           <h3>Question ({this.props.questionAnswer.activeQuestionId+1}/{this.props.quizQuestions.length})</h3>
-          <p className="question-text">{this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].question}</p>
+          <p className="question-text animated bounceIn">{this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].question}</p>
         </div>
     )
   }
