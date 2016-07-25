@@ -25,7 +25,7 @@ export default function(state = initialState, action) {
         return {...state,
           correctAnswers: state.correctAnswers+=1,
           nextButtonDisabled: false,
-          nextButtonHidden: false,          
+          nextButtonHidden: false,
           nextButtonColor: 'success',
           totalQuizQuestions: totalQuizQuestions,
           fireQuestionAnimation: null,
@@ -40,7 +40,7 @@ export default function(state = initialState, action) {
           nextButtonColor: 'success',
           totalQuizQuestions: totalQuizQuestions,
           fireQuestionAnimation: null,
-          fireScoreAnimation: 'animated shake'
+          fireScoreAnimation: 'animated flipInX'
         }
     //ANSWER_SELECTED CASE
 
