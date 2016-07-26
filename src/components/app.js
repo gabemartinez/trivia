@@ -9,7 +9,7 @@ export default class App extends Component {
       <div className="container well">
         <div className="row">
           <div className="col-md-12">
-            <h2>Test Your Knowledge</h2>
+            <h2>Test your knowledge</h2>
           </div>
         </div>
         <div className="row">
