@@ -5,14 +5,18 @@ import {selectAnswer} from '../actions'
 
 class Answer extends Component {
 
+  handleClick2(e){
+    console.log(e.target)
+    e.target.className = 'list-group-item selected-answer'
+  }
+
   answersList() {
     let correctanswer = this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].correctanswerid
     let totalquizquestions = this.props.quizQuestions.length
+    let nextbuttoncolor = this.props.questionAnswer.nextButtonColor
     return ( this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].answers.map((answer) => {
         return (
-
-
-          <li key={answer.id} className={4>3 ? 'list-group-item selected-answer' : 'list-group-item'} onClick={this.props.questionAnswer.nextButtonColor != 'success' ? () => this.props.selectAnswer(answer, correctanswer, totalquizquestions) : null}>
+          <li key={answer.id} className="list-group-item" onClick={ nextbuttoncolor != 'success' ? () => this.props.selectAnswer(answer, correctanswer, totalquizquestions) : null} >
            {answer.answer} - {answer.id}
           </li>
         )
