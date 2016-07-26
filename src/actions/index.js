@@ -21,7 +21,7 @@ export const nextQuestion = (thisquestionid) => {
 //--
 
 export const tryAgain = () => {
-  console.log('TRY AGAIN BUTTON CLICKED!')
+  //console.log('TRY AGAIN BUTTON CLICKED!')
   return {
     type: 'TRY_AGAIN_BUTTON_CLICKED',
   }

@@ -6,7 +6,9 @@ const initialState = {
   totalQuizQuestions: 0,
   nextButtonColor: 'danger',
   fireQuestionAnimation: 'animated bounceIn',
-  fireScoreAnimation: null
+  fireScoreAnimation: null,
+
+  elSubmittedAnswerId: null,
 }
 
 export default function(state = initialState, action) {
@@ -29,7 +31,9 @@ export default function(state = initialState, action) {
           nextButtonColor: 'success',
           totalQuizQuestions: totalQuizQuestions,
           fireQuestionAnimation: null,
-          fireScoreAnimation: 'animated flash'
+          fireScoreAnimation: 'animated flash',
+
+          elSubmittedAnswerId: submittedAnswerId,
         }
       }
 
@@ -40,7 +44,9 @@ export default function(state = initialState, action) {
           nextButtonColor: 'success',
           totalQuizQuestions: totalQuizQuestions,
           fireQuestionAnimation: null,
-          fireScoreAnimation: 'animated flipInX'
+          fireScoreAnimation: 'animated flipInX',
+
+          elSubmittedAnswerId: submittedAnswerId,
         }
     //ANSWER_SELECTED CASE
 
@@ -52,7 +58,9 @@ export default function(state = initialState, action) {
           nextButtonHidden: true,
           nextButtonColor: 'danger',
           fireQuestionAnimation: 'animated bounceIn',
-          fireScoreAnimation: null
+          fireScoreAnimation: null,
+
+          elSubmittedAnswerId: null,
         }
     //NEXT_QUESTION_BUTTON_CLICKED CASE
 
@@ -66,7 +74,9 @@ export default function(state = initialState, action) {
             totalQuizQuestions: 0,
             nextButtonColor: 'danger',
             fireQuestionAnimation: 'animated bounceIn',
-            fireScoreAnimation: null
+            fireScoreAnimation: null,
+
+            elSubmittedAnswerId: null,
         }
     //TRY_AGAIN_BUTTON_CLICKED CASE RETURN TO INITIAL STATE
 
