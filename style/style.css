@@ -36,3 +36,7 @@
   color: #8C1D40;
   font-weight: bold;
 }
+
+.selected-answer {
+  background-color: #FFC627 !important;
+}

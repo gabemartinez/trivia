@@ -18,7 +18,7 @@ export default function(state = initialState, action) {
       let submittedAnswerId = action.answer.id
       let correctAnswerId = action.correctanswer
       let totalQuizQuestions = action.totalquizquestions
-      //console.log(correctAnswerId)
+      console.log(submittedAnswerId)
 
       //if answer is correct increment correct answers
       if (submittedAnswerId === correctAnswerId) {
