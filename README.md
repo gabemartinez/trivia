@@ -21,7 +21,7 @@ Clone the repo, install dependencies, then start the dev server with the followi
 
 ###Screenshot###
 
-![Screenshot of Widget](http://i.imgur.com/sFgt8tR.png)
+![Screenshot of Widget](http://i.imgur.com/4fv16kT.png)
 
 ###Test the widget on CodePen###
 
