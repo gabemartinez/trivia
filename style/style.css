@@ -40,3 +40,21 @@
 .selected-answer {
   background-color: #FFC627 !important;
 }
+
+
+.btn-facebook, .btn-facebook:focus, .btn-facebook.focus,
+.btn-facebook:active, .btn-facebook.active, .btn-facebook:visited,
+.btn-facebook:active:hover, .btn-facebook.active:hover{
+    background-color: #3b5998 !important;
+    border-color: #3b5998 !important;
+    color: #fff !important;
+}
+
+.btn-twitter, .btn-twitter:hover, .btn-twitter:focus, .btn-twitter.focus,
+  .btn-twitter:active, .btn-twitter.active, .btn-twitter:visited,
+  .btn-twitter:active:hover, .btn-twitter.active:hover{
+      background-color: #55acee !important;
+      border-color: #55acee !important;
+      color: #fff !important;
+      margin-left: 10px;
+  }
