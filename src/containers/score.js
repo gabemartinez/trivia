@@ -24,8 +24,8 @@ class Score extends Component {
                 {/*{this.props.questionAnswer.totalQuizQuestions>0 ? Math.floor((this.props.questionAnswer.correctAnswers/this.props.questionAnswer.totalQuizQuestions)* 100) : 0}%*/}
               </p>
               <h4>Share with your friends</h4>
-              <p><a className="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//codepen.io/gabemartinez/full/YWLPQv/" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-              <a className="btn btn-twitter" href="https://twitter.com/home?status=Try%20to%20beat%20my%20score!%20http%3A//codepen.io/gabemartinez/full/YWLPQv/" target="_blank"><i className="fa fa-twitter fa-lg"></i></a></p>
+              <p><a className="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//asunow.asu.edu/20160727-asu-golfer-earns-prestigious-jack-nicklaus-award" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
+              <a className="btn btn-twitter" href="https://twitter.com/home?status=Try%20to%20beat%20my%20score!%20https%3A//asunow.asu.edu/20160727-asu-golfer-earns-prestigious-jack-nicklaus-award" target="_blank"><i className="fa fa-twitter fa-lg"></i></a></p>
             </div>
           </div>
         )
