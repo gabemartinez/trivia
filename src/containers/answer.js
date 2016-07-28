@@ -10,9 +10,10 @@ class Answer extends Component {
     let totalquizquestions = this.props.quizQuestions.length
     let nextbuttoncolor = this.props.questionAnswer.nextButtonColor
     let elsubmittedanswerid = this.props.questionAnswer.elSubmittedAnswerId
+    let thisquestionid = this.props.questionAnswer.activeQuestionId
     return ( this.props.quizQuestions[this.props.questionAnswer.activeQuestionId].answers.map((answer) => {
         return (
-          <li key={answer.id} className={ answer.id === elsubmittedanswerid ? 'list-group-item selected-answer' : 'list-group-item' } onClick={ nextbuttoncolor != 'success' ? () => this.props.selectAnswer(answer, correctanswer, totalquizquestions) : null } >
+          <li key={answer.id} className={ answer.id === elsubmittedanswerid ? 'list-group-item selected-answer' : 'list-group-item' } onClick={ nextbuttoncolor != 'success' ? () => this.props.selectAnswer(answer, correctanswer, totalquizquestions, thisquestionid, elsubmittedanswerid) : null } >
            {answer.answer}
           </li>
         )
